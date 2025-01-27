@@ -12,7 +12,7 @@ jobs:
   sync_latest_from_upstream:
     name: Sync specific file from upstream repo
     runs-on: ubuntu-latest
-    if: ${{ github.event.repository.fork }}
+    #if: ${{ github.event.repository.fork }}
     env:
       FILE_TO_SYNC: _worker.js # 定义特定文件的全局变量
 
